@@ -1,0 +1,16 @@
+export const colors = {
+  primary: '#081138',
+  royal: '#003FF7',
+  regular: '#676D85',
+  black: '#000000',
+  cyan: '#25c4ac',
+  warning: '#f52222',
+  greyish: '#dbdbdb',
+  light: '#F6F7F8',
+  dark: '#55504E',
+  white: '#fff',
+  shadow: '#000',
+  placeholder: '#c7c7cd',
+  transparent: '#ffffff00',
+  green: '#69d533',
+};

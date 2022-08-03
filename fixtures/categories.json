@@ -1,0 +1,32 @@
+{
+  "categoriesList": [
+    {
+      "id": 1,
+      "headline": "entertainment"
+    },
+    {
+      "id": 2,
+      "headline": "general"
+    },
+    {
+      "id": 3,
+      "headline": "business"
+    },
+    {
+      "id": 4,
+      "headline": "health"
+    },
+    {
+      "id": 5,
+      "headline": "sport"
+    },
+    {
+      "id": 6,
+      "headline": "science"
+    },
+    {
+      "id": 7,
+      "headline": "technology"
+    }
+  ]
+}

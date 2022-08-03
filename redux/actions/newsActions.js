@@ -9,6 +9,6 @@ export const getCategoryNews = async categoryName => {
     );
     return data;
   } catch (error) {
-    Alert.alert('Alert Title');
+    // Alert.alert('Alert Title');
   }
 };

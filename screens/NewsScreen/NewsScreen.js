@@ -13,13 +13,13 @@ import ArticleItem from '../../components/ArticleItem/ArticleItem';
 const NewsScreen = ({navigation, route}) => {
   const categoryName = route.name;
 
-  const [news, setNews] = useState();
+  const [news, setNews] = useState([]);
   const [loading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const initScreen = async () => {
       const categoryNews = await getCategoryNews(categoryName);
-      setNews(categoryNews.articles);
+      setNews(categoryNews?.articles);
       setIsLoading(false);
     };
     initScreen();
@@ -29,7 +29,7 @@ const NewsScreen = ({navigation, route}) => {
 
   return (
     <SafeAreaView style={styles.screen}>
-      {loading ? (
+      {loading && news ? (
         <ActivityIndicator size={'large'} />
       ) : (
         <FlatList

@@ -1,0 +1,14 @@
+{
+  "tabs": [
+    {
+      "tab": "חדשות",
+      "route": "categories-screen",
+      "icon": 0
+    },
+    {
+      "tab": "חיפוש",
+      "route": "search-screen",
+      "icon": 1
+    }
+  ]
+}

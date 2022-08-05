@@ -7,6 +7,8 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
+
+// Style
 import {colors} from '../../assets/colors/colors';
 
 const itemWidth = Dimensions.get('window').width * 0.85;
@@ -27,7 +29,7 @@ const ArticleItem = ({element, onArticle}) => {
         style={styles.itemContainer}>
         <View style={styles.detailsContainer}>
           <Text style={styles.item}>{title}</Text>
-          <Text style={styles.author}>- {author || 'Unknown'}</Text>
+          <Text style={styles.author}>- {author || 'מגזין'}</Text>
         </View>
       </ImageBackground>
     </TouchableOpacity>
@@ -36,20 +38,21 @@ const ArticleItem = ({element, onArticle}) => {
 
 const styles = StyleSheet.create({
   itemContainer: {
-    margin: 8,
-    height: 160,
+    margin: 12,
+    height: 180,
     width: itemWidth,
     justifyContent: 'flex-end',
   },
   detailsContainer: {
     padding: 5,
-    backgroundColor: colors.black,
+    backgroundColor: colors.transparent,
   },
   item: {
     color: colors.white,
   },
   author: {
     fontSize: 10,
+    textAlign: 'right',
     color: colors.white,
   },
 });

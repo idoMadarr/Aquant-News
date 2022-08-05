@@ -3,12 +3,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import CategoryNavigation from '../CategoryNavigation/CategoryNavigation';
 import SearchScreen from '../../screens/SearchScreen/SearchScreen';
+import TabsContainer from '../../components/AppTabBar/TabsContainer/TabsContainer';
 
 const TabNavigation = () => {
   const TabNavigator = createBottomTabNavigator();
 
   return (
     <TabNavigator.Navigator
+      tabBar={() => <TabsContainer />}
       screenOptions={{
         headerShown: false,
         tabBarIcon: null,

@@ -2,31 +2,33 @@
   "categoriesList": [
     {
       "id": 1,
-      "headline": "entertainment"
+      "headline": "entertainment",
+      "name": "Entertainment"
     },
     {
       "id": 2,
-      "headline": "general"
+      "headline": "business",
+      "name": "Business"
     },
     {
       "id": 3,
-      "headline": "business"
+      "headline": "health",
+      "name": "Health"
     },
     {
       "id": 4,
-      "headline": "health"
+      "headline": "sport",
+      "name": "Sport"
     },
     {
       "id": 5,
-      "headline": "sport"
+      "headline": "science",
+      "name": "Science"
     },
     {
       "id": 6,
-      "headline": "science"
-    },
-    {
-      "id": 7,
-      "headline": "technology"
+      "headline": "technology",
+      "name": "Technology"
     }
   ]
 }

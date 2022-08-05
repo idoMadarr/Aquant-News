@@ -29,7 +29,7 @@ const ArticleItem = ({element, onArticle}) => {
         style={styles.itemContainer}>
         <View style={styles.detailsContainer}>
           <Text style={styles.item}>{title}</Text>
-          <Text style={styles.author}>- {author || 'מגזין'}</Text>
+          <Text style={styles.author}>- {author || 'BBC'}</Text>
         </View>
       </ImageBackground>
     </TouchableOpacity>
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
   author: {
     fontSize: 10,
     textAlign: 'right',
+    paddingHorizontal: 8,
     color: colors.white,
   },
 });

@@ -3,7 +3,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {useSelector} from 'react-redux';
 
-// Modalize
+// Components
+import AppHeader from '../../components/AppHeader/AppHeader';
 import {Modalize} from 'react-native-modalize';
 
 // Screens
@@ -27,9 +28,13 @@ const AppNavigation = () => {
 
   return (
     <NavigationContainer>
-      <MainNavigator.Navigator screenOptions={{headerShown: false}}>
+      <MainNavigator.Navigator screenOptions={{header: () => <AppHeader />}}>
         <MainNavigator.Screen name={'menu-tabs'} component={TabNavigation} />
-        <MainNavigator.Screen name={'main-stack'} component={StackNavigation} />
+        <MainNavigator.Screen
+          name={'main-stack'}
+          component={StackNavigation}
+          options={{headerShown: false}}
+        />
       </MainNavigator.Navigator>
       <Modalize
         ref={modalizeRef}

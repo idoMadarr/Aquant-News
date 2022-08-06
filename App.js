@@ -8,7 +8,7 @@ import {colors} from './assets/colors/colors';
 const App = () => {
   return (
     <Provider store={store}>
-      <StatusBar barStyle={'dark-content'} backgroundColor={colors.white} />
+      <StatusBar barStyle={'dark-content'} backgroundColor={colors.light} />
       <AppNavigation />
     </Provider>
   );

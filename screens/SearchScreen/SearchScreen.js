@@ -44,7 +44,6 @@ const SearchScreen = () => {
 
   return (
     <View style={styles.screen}>
-      <Text style={styles.title}>News From World</Text>
       <TextInput
         placeholder={'Search'}
         onChangeText={optimizeSearchFunc}
